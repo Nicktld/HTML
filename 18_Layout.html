@@ -1,0 +1,142 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<style type="text/css">
+body {
+	background-color: AAAAAA
+}
+p {
+	margin-left: 20px
+}
+
+.cities {
+	background-color:black;
+	color:white;
+	margin:0px;
+	padding:20px;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:200px;
+    float:left;
+    padding:10px; 
+}
+#section {
+	background-color:yellow;
+	height:300px;
+    float:left;
+    padding:10px; 
+}
+#text {
+	height:200px;
+	width:700px;
+	float:left;
+	padding:10px;
+}
+#footer {
+	clear:both;
+    text-align:center; 
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+	<p>This is my place!</p>
+	<a name="tips">Some useful information for you!<br />
+		1.To be No.1<br />
+		2.To be yourself!
+	</a><br />
+</div>
+	
+<p style="color: red; margin-left: 20px">This is a paragraph</p>
+
+<a href="http://www.w3school.com.cn/" target="_blank">Visit W3School</a><br />
+
+
+<a href="#tips">Please click me</a><br />
+
+<div style="clear:both">
+	<img src="/home/ledong/Pictures/hw6_3.png" width="200" height="200" alt="HW6"/>
+</div>
+
+<div id="nav">
+	<table border="0">
+		<tr>
+			<th>This is a heading!</th>
+			<th>This is another heading!</th>
+		</tr>
+		<tr>
+			<td>row 1, cell 1</td>
+			<td>row 1, cell 2</td>
+		</tr>
+		<tr>
+			<td>row 2, cell 1</td>
+			<td>row 2, cell 2</td>
+		</tr>
+	</table>
+
+	<table border="1">
+	<caption>Here we have a caption</caption>
+		<tr>
+			<td>row 1, cell1</td>
+			<td>row 1, cell2</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>row 2, cell 2</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:center">row 1</td>
+		</tr>
+	</table>
+</div>
+
+<div id="section">
+	<ul>
+		<li>Coffee<br />
+			<ul>
+				<li>Black</li>
+			</ul>
+		</li>
+		<li>Milk</li>
+	</ul>
+
+	<ol>
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ol>
+
+	<dl>
+		<dt>Coffee</dt>
+		<dd>Black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>White cold drink</dd>
+	</dl>
+</div>
+
+<div id="text">
+	<p>HTML elements are defined into two parts.<br />1.block level element: It initializes in a new row e.g. &lt;h1&gt;,&lt;p&gt;,&lt;ul&gt;,&lt;table&gt;<br />2.incline element: It will not start a new row e.g. &lt;b&gt;,&lt;td&gt;,&lt;a&gt;,&lt;img&gt;<br /></p>
+
+	<p>&lt;div&gt; is a block element which starts a new row. It often comes with CSS and acts for layouts.</p>
+
+	<p>&lt;span&gt; is an inline element. It often shows up inside block elements.</p>
+</div>
+
+<div id="footer">
+	<p class="cities">Define your customed class in &lt;style&gt; tag, assign the attribute 	"class"of which tag you wanna transform with that one your defined</p>
+</div>
+</body>
+</html>
