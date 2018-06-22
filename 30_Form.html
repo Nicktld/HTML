@@ -6,6 +6,9 @@
 <style>
 body {background-image: url('/home/ledong/Pictures/html_back_img_2.jpg');}
 div {border-bottom:2px solid white; margin:20px; padding:10px;}
+
+.dual { height:60px; padding:10px;}
+.newline {clear:both;}
 </style>
 </head>
 
@@ -13,25 +16,77 @@ div {border-bottom:2px solid white; margin:20px; padding:10px;}
 <h1>Form</h1>
 <p>This document may shows some attributes of forms. Forms are used when users upload something to websites</p>
 
-<form>
+<form action="/action" method="get" enctype="multiple/form-data">
 <div>
 First name:<br />
-<input type="text" name="firstname" />
+<input type="text" name="firstname" value="Mike" />
 <br />
 Last name:<br />
-<input type="text" name="lastname" />
+<input type="text" name="lastname" value="Buy" />
 </div>
 
 <div>
+This row will combine two attributes.<br />
+<span class="dual">
 Choose your gender:<br />
 <input type="radio" name="sex" value="male" checked="checked" />Male
 <br />
 <input type="radio" name="sex" value="female" />Female
+<br />
+</span>
+
+
+<span class="dual">
+Choose your vehicle:<br />
+<input type="checkbox" name="vehicle" value="Bike" checked="checked" />I have a bike.
+<br />
+<input type="checkbox" name="vehicle" value="Car" />I have a car.
+<br />
+</span>
 </div>
 
 
 
+<div class="newline">
+<p>Type into your username and password:</p>
+Username:<br />
+<input type="text" name="username">
+<br />
+Password:<br />
+<input type="password" name="psw">
+<!-- The characters in psw charset will be shown as '*' or 'circle'-->
+</div>
+
+
+<div>
+<input type="button" onclick="alert('Hello, world!')" value="Click Me!" />
+</div>
+
+<div>
+Quantity (between 1 and 100, step 5):
+<input type="number" name="quantity" min="1" max="100" step="5" />
+</div>
+
+<div>
+Brithday:
+<input type="date" name="bday" /><br />
+Enter a date before 1980-01-01:
+<input type="date" name="sday" max="1979-12-31" /><br />
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02" />
+</div>
+
+<div>
+Select your favourite color:
+<input type="color" name="favcolor" />
+</div>
+
+<div>
+<input type="submit" value="Submit" />
+</div>
+
 </form>
+
 
 </body>
 
